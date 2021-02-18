@@ -15,7 +15,7 @@ on:
         default: 'World'
         # Input has to be provided for the workflow to run
         required: true
-      name:
+      name2:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Cat to greet'
         # Default value if no value is explicitly provided
