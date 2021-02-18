@@ -36,8 +36,6 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps2:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name2 }}"
