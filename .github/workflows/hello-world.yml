@@ -8,14 +8,14 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
-      name:
+      person:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Person to greet'
         # Default value if no value is explicitly provided
         default: 'World'
         # Input has to be provided for the workflow to run
         required: true
-      name2:
+      cat:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Cat to greet'
         # Default value if no value is explicitly provided
@@ -33,9 +33,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: greet person
+      run: echo "Hello ${{ github.event.inputs.person }}"
 
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name2 }}"
+    - name: greet cat
+      run: echo "Hello ${{ github.event.inputs.cat }}"
