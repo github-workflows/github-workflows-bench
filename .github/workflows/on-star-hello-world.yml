@@ -5,10 +5,10 @@ on:
       type: [started]
       
 jobs:
-   job-star
+   job-star:
    
-   runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
    
-   step:
-   - name: echo starred
-      run: echo "this repo has been starred"
+      steps:
+      - name: echo starred
+        run: echo "this repo has been starred"
