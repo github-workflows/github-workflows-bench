@@ -10,4 +10,5 @@ jobs:
    runs-on: ubuntu-latest
    
    step:
-   - echo "this repo has been starred"
+   - name: echo starred
+      run: echo "this repo has been starred"
