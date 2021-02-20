@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: greet person
-      run: echo "Hello ${{ github.event.inputs.person }}"
+      run: echo "hello world"
