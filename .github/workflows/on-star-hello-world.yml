@@ -1,0 +1,13 @@
+name: on-watch-hello-world
+
+on:
+   watch:
+      type: [started]
+      
+jobs:
+   job-star
+   
+   runs-on: ubuntu-latest
+   
+   step:
+   - echo "this repo has been starred"
