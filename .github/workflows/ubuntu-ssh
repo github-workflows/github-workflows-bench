@@ -1,4 +1,4 @@
-name: ubuntu+ssh
+name: ubuntu-ssh
 #on: 
 #  workflow_dispatch:
 #defaults:
