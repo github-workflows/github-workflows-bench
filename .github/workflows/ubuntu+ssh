@@ -1,9 +1,9 @@
 name: ubuntu+ssh
 on: 
   workflow_dispatch:
-defaults:
-  run:
-    shell: bash
+#defaults:
+#  run:
+#    shell: bash
 
 jobs:
   build:
