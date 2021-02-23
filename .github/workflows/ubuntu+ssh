@@ -1,13 +1,13 @@
 name: ubuntu+ssh
-on: 
-  workflow_dispatch:
+#on: 
+#  workflow_dispatch:
 #defaults:
 #  run:
 #    shell: bash
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
 #    steps:
 #    - uses: fastai/workflows/ssh@master
 #      with:
@@ -17,3 +17,17 @@ jobs:
 #    - run: source ubuntu-run.sh
 #    - name: Setup tmate session
 #      uses: mxschmitt/action-tmate@master
+
+
+#name: hello world
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: greet person
+      run: echo "hello world"
