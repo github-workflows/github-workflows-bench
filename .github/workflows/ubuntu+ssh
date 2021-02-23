@@ -1,4 +1,4 @@
-name: Ubuntu-Server
+name: ubuntu+ssh
 on: 
   workflow_dispatch:
 defaults:
@@ -8,12 +8,12 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - uses: fastai/workflows/ssh@master
-      with:
-        ssh_key: ${{ secrets.SSH_KEY }}
-        key_file: id_ecdsa
-    - uses: actions/checkout@v2
-    - run: source ubuntu-run.sh
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@master
+#    steps:
+#    - uses: fastai/workflows/ssh@master
+#      with:
+#        ssh_key: ${{ secrets.SSH_KEY }}
+#        key_file: id_ecdsa
+#    - uses: actions/checkout@v2
+#    - run: source ubuntu-run.sh
+#    - name: Setup tmate session
+#      uses: mxschmitt/action-tmate@master
